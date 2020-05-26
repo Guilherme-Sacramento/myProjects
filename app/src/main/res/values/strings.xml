@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PicpayChallenge</string>
+    <string name="title_activity_cadastrar_cartao">ActivityCadastrarCartao</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="string_query">Hoje eh sexta cheira melhor dia</string>
+    <string name="register_credit_card">Cadastre um cartão de crédito</string>
+    <string name="register_description">Para fazer pagamentos para outras pessoas você precisa cadastrar um cartão de crédito pessoal.</string>
+    <string name="card_number_field">Número do cartão</string>
+    <string name="account_holder_name">Nome do titular</string>
+    <string name="account_due_date">Vencimento</string>
+    <string name="cvv_number">CVV</string>
+</resources>

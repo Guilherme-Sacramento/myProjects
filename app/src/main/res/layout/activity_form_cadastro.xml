@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FormCadastroActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundColor"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/FormRegisterNavBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:navigationIcon="@drawable/back_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Cadastrar cartão"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="@color/hintColorText">
+
+                    <com.santalu.maskedittext.MaskEditText
+                        android:id="@+id/cardNumberInput"
+                        android:inputType="number"
+                        app:met_mask="#### #### #### ####"
+                        android:layout_width="match_parent"
+                        android:textColorHighlight="@color/picPayGreen"
+                        android:textColor="@color/whiteColor"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/card_number_field"
+                        android:textColorHint="@color/picPayGreen"
+                        android:backgroundTint="@color/hintColorText"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="@color/hintColorText">
+
+                    <com.santalu.maskedittext.MaskEditText
+                        android:id="@+id/holderNameInput"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:imeOptions="actionNone"
+                        android:textColorHighlight="@color/picPayGreen"
+                        android:textColor="@color/whiteColor"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/account_holder_name"
+                        android:textColorHint="@color/picPayGreen"
+                        android:backgroundTint="@color/hintColorText"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/hintColorText">
+
+                        <com.santalu.maskedittext.MaskEditText
+                            android:id="@+id/dueDateInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/hintColorText"
+                            android:hint="@string/account_due_date"
+                            android:inputType="date"
+                            android:textColor="@color/whiteColor"
+                            android:textColorHighlight="@color/picPayGreen"
+                            android:textColorHint="@color/picPayGreen"
+                            app:met_mask="##/##" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:textColorHint="@color/hintColorText"
+                        android:layout_weight="1">
+
+                        <com.santalu.maskedittext.MaskEditText
+                            android:id="@+id/CVVNumberInput"
+                            android:layout_width="match_parent"
+                            android:inputType="numberDecimal"
+                            android:textColorHighlight="@color/picPayGreen"
+                            android:textColor="@color/whiteColor"
+                            android:layout_height="wrap_content"
+                            app:met_mask="###"
+                            android:hint="@string/cvv_number"
+                            android:textColorHint="@color/picPayGreen"
+                            android:backgroundTint="@color/hintColorText"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Salvar"
+                android:layout_gravity="bottom"
+                android:visibility="invisible"
+                android:backgroundTint="@color/picPayGreen"
+                android:textColor="@color/whiteColor"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

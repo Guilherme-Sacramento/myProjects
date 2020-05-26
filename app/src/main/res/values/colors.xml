@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B2C2F</color>
+    <color name="colorPrimaryDark">#1D1E20</color>
+    <color name="borderImageColor">#2B2C2F</color>
+    <color name="backgroundColor">#1D1E20</color>
+    <color name="whiteColor">#FFF</color>
+    <color name="picPayGreen">#11C76F</color>
+    <color name="transparentWhiteColor">#0DFFFFFF</color>
+    <color name="hintColorText">#DADADA</color>
+    <color name="editTextColor">#2B2C2F</color>
+</resources>

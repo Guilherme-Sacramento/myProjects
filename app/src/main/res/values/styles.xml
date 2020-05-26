@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppSearchViewTheme" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorPrimary">@color/whiteColor</item>
+        <item name="android:textColorHint">@color/whiteColor</item>
+        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:backgroundTint">@color/editTextColor</item>
+        <item name="android:tint">@color/whiteColor</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlNormal">@color/hintColorText</item>
+        <item name="colorControlActivated">@color/picPayGreen</item>
+        <item name="android:textColor">@color/picPayGreen</item>
+    </style>
+
+</resources>
